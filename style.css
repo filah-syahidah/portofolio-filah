@@ -1397,3 +1397,58 @@ footer {
         padding-top: 110px;
     }
 }
+/* ACHIEVEMENT CARD */
+.achievement-card {
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all 0.35s ease;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.achievement-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.achievement-image {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.achievement-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: transform 0.5s ease;
+}
+
+.achievement-card:hover .achievement-image img {
+    transform: scale(1.05);
+}
+
+/* BADGE */
+.page-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    background: rgba(0,0,0,0.05);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* LIST */
+.achievement-card ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .achievement-image img {
+        height: 190px;
+    }
+}
